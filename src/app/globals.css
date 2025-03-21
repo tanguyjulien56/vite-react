@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 253 44% 98%;
+    --foreground: 253 58% 0%;
+    --muted: 253 7% 87%;
+    --muted-foreground: 253 13% 37%;
+    --popover: 253 44% 98%;
+    --popover-foreground: 253 58% 0%;
+    --card: 253 44% 97%;
+    --card-foreground: 0 0% 0%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --primary: 253 91% 58%;
+    --primary-foreground: 253 91% 98%;
+    --secondary: 253 5% 89%;
+    --secondary-foreground: 253 5% 29%;
+    --accent: 253 12% 82%;
+    --accent-foreground: 253 12% 22%;
+    --destructive: 339.2 90.36% 51.18%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 253 91% 58%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 253 43% 3%;
+    --foreground: 253 31% 98%;
+    --muted: 253 7% 13%;
+    --muted-foreground: 253 13% 63%;
+    --popover: 253 43% 3%;
+    --popover-foreground: 253 31% 98%;
+    --card: 253 43% 4%;
+    --card-foreground: 253 31% 99%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --primary: 253 91% 58%;
+    --primary-foreground: 253 91% 98%;
+    --secondary: 253 7% 9%;
+    --secondary-foreground: 253 7% 69%;
+    --accent: 253 13% 14%;
+    --accent-foreground: 253 13% 74%;
+    --destructive: 339.2 90.36% 51.18%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 253 91% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+.custom-logo-experience-mobile {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -82px; /* Equivalent to -left-20 */
+  top: 0.25rem; /* Equivalent to top-1 */
+  background-color: white; /* Equivalent to bg-white */
+  border: 1px solid #d1d5db; /* Equivalent to border-gray-300 */
+  border-radius: 9999px; /* Equivalent to rounded-full */
+  width: 4rem; /* Equivalent to w-16 */
+  height: 4rem; /* Equivalent to h-16 */
+  padding: 0.25rem; /* Equivalent to p-1 */
+}
+
+.custom-logo-experience-lg {
+  display: none; /* Equivalent to hidden */
+}
+/* Apply styles only on large screens */
+@media (min-width: 1024px) {
+  .custom-logo-experience-lg {
+    display: flex; /* Equivalent to lg:flex */
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right: -116px; /* Equivalent to -right-28 */
+    top: 0.25rem; /* Equivalent to top-1 */
+    background-color: white; /* Equivalent to bg-white */
+    border: 1px solid #d1d5db; /* Equivalent to border-gray-300 */
+    border-radius: 9999px; /* Equivalent to rounded-full */
+    width: 4rem; /* Equivalent to w-16 */
+    height: 4rem; /* Equivalent to h-16 */
+  }
+}
+.custom-card-right-lg {
+  position: relative; /* Equivalent to relative */
+  padding: 1rem; /* Equivalent to p-4 */
+  margin-left: 3rem; /* Equivalent to ml-12 */
+  margin-right: 0; /* Equivalent to lg:mr-20 on larger screens */
+  margin-top: 0.75rem; /* Equivalent to lg:mt-3 */
+  border-width: 1px; /* Equivalent to border-1px */
+  transition: box-shadow 0.3s, transform 0.3s; /* For smooth hover effect */
+}
+
+/* Styles specific to large screens */
+@media (min-width: 1024px) {
+  .custom-card-right-lg {
+    display: absolute; /* Equivalent to absolute */
+    margin-left: 0; /* Equivalent to lg:ml-0 */
+    margin-right: 5rem; /* Equivalent to lg:mr-20 */
+    margin-top: 0.75rem; /* Equivalent to lg:mt-3 */
+    transform: translateX(580px); /* Move the card out to the right */
+  }
+}
+
+.custom-logo-experience-lg-right {
+  display: none; /* Equivalent to hidden */
+}
+@media (min-width: 1024px) {
+  .custom-logo-experience-lg-right {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -117px; /* Equivalent to -left-20 */
+    top: 0.25rem; /* Equivalent to top-1 */
+    background-color: white; /* Equivalent to bg-white */
+    border: 1px solid #d1d5db; /* Equivalent to border-gray-300 */
+    border-radius: 9999px; /* Equivalent to rounded-full */
+    width: 4rem; /* Equivalent to w-16 */
+    height: 4rem; /* Equivalent to h-16 */
+    padding: 0.25rem; /* Equivalent to p-1 */
+  }
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.offset-anchor {
+  position: relative;
+  padding-top: 100px;
+  margin-top: -100px;
+}
+@keyframes rotateSelf {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateSelfInverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.rotate-self {
+  animation: rotateSelf 10s infinite linear;
+  transform-origin: center;
+}
+.rotate-self-inverse {
+  animation: rotateSelfInverse 10s infinite linear;
+  transform-origin: center;
+}
