@@ -56,7 +56,7 @@ export default function Hero() {
           ></motion.div>
 
           <HeroHighlight className="text-4xl font-bold">
-            <TypewriterEffectSmooth words={words} />
+            <TypewriterEffectSmooth words={words} className="p-4" />
             <motion.h1
               initial={{
                 opacity: 0,
@@ -71,7 +71,7 @@ export default function Hero() {
                 ease: [0.4, 0.0, 0.2, 1],
                 delay: 1,
               }}
-              className="flex flex-col md:flex-row-reverse gap-5 font-bold max-w-4xl leading-relaxed lg:leading-snug text-center  "
+              className="flex flex-col md:flex-row-reverse gap-5 font-bold max-w-5xl leading-relaxed lg:leading-snug text-center p-4 "
             >
               <div className=" m-auto min-w-72 flex justify-center items-center ">
                 <img
@@ -96,7 +96,7 @@ export default function Hero() {
 
                 <Button
                   borderRadius="1.75rem"
-                  className="flex gap-2 text-black bg-red-900 hover:bg-red-800 dark:text-white border-neutral-200 dark:border-slate-800"
+                  className="flex gap-2 text-white bg-red-800 hover:bg-red-800 border-neutral-200 dark:border-slate-800"
                   onClick={() => scrollToSection("section2")}
                 >
                   Découvrez mon parcours
