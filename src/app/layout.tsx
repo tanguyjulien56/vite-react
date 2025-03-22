@@ -12,8 +12,8 @@ const AnekTelugu = Anek_Telugu({
 });
 
 export const metadata: Metadata = {
-  title: "Julien",
-  description: "Développeur Web full stack React, Node.js",
+  title: "Aloïs",
+  description: "Etudiant à l'UCO",
 };
 
 export default function RootLayout({
