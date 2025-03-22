@@ -55,7 +55,7 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
           ></motion.div>
 
-          <HeroHighlight>
+          <HeroHighlight className="text-4xl font-bold">
             <TypewriterEffectSmooth words={words} />
             <motion.h1
               initial={{
@@ -71,7 +71,7 @@ export default function Hero() {
                 ease: [0.4, 0.0, 0.2, 1],
                 delay: 1,
               }}
-              className=" flex flex-col md:flex-row-reverse gap-5 font-bold max-w-4xl leading-relaxed lg:leading-snug text-center  "
+              className="flex flex-col md:flex-row-reverse gap-5 font-bold max-w-4xl leading-relaxed lg:leading-snug text-center  "
             >
               <div className=" m-auto min-w-72 flex justify-center items-center ">
                 <img
