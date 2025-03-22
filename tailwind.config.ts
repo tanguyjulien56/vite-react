@@ -38,7 +38,7 @@ const config = {
     },
     extend: {
       colors: {
-        customColors: "#5d32f5", //a changer suivant couleur du site
+        customColors: "#f52844", //a changer suivant couleur du site
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

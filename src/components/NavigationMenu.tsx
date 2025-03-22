@@ -22,22 +22,22 @@ export default function NavigationMenu() {
       <Menubar className={cn("hidden lg:flex m-0 p-0")}>
         <MenubarMenu>
           <MenubarTrigger onClick={() => scrollToSection("section1")}>
-            Presentation
+            Accueil
           </MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
           <MenubarTrigger onClick={() => scrollToSection("section2")}>
-            Skills
+            Parcours
           </MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
           <MenubarTrigger onClick={() => scrollToSection("section3")}>
-            Experience
+            Mon stage
           </MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
           <MenubarTrigger onClick={() => scrollToSection("section4")}>
-            Formation
+            Contact
           </MenubarTrigger>
         </MenubarMenu>
       </Menubar>
@@ -50,16 +50,16 @@ export default function NavigationMenu() {
         <DropdownMenuContent className="w-56">
           <DropdownMenuGroup>
             <DropdownMenuItem onClick={() => scrollToSection("section1")}>
-              Presentation
+              Accueil
             </DropdownMenuItem>
             <DropdownMenuItem onClick={() => scrollToSection("section2")}>
-              Skills
+              Parcours
             </DropdownMenuItem>
             <DropdownMenuItem onClick={() => scrollToSection("section3")}>
-              Experience
+             Stage
             </DropdownMenuItem>
             <DropdownMenuItem onClick={() => scrollToSection("section4")}>
-              Formation
+             Contact
             </DropdownMenuItem>
           </DropdownMenuGroup>
         </DropdownMenuContent>

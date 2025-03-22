@@ -25,11 +25,11 @@ export default function Header() {
       <section className="flex gap-4 m-auto max-w-5xl">
         <div className="flex-[1] flex gap-2 items-center">
           <Avatar>
-            <AvatarImage src="profile-pic2.png" alt="photo-profil" />
+            <AvatarImage src="profile-pic.jpeg" alt="photo-profil" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
           <div className="hidden md:block text-lg font-semibold">
-            Julien TANGUY
+            Aloïs Le Breton
           </div>
         </div>
         <NavigationMenu />
