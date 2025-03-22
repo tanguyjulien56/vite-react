@@ -39,7 +39,7 @@ export default function Hero() {
           <h3 className="text-3xl font-caption pb-6 lg:p-0">
             Hello moi c'est Aloïs
           </h3>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
+          <p className="leading-7 [&:not(:first-child)]:mt-6 text-justify">
             Je suis étudiant en 2ᵉ année de{" "}
             <Code className="inline-flex items-center gap-1 rounded">
               <span role="img" aria-label="engineering">

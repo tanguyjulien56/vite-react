@@ -36,7 +36,7 @@ export default function Entreprise() {
             transition={{ duration: 0.5 }}
           ></motion.div>
 
-          <p className="  leading-7 [&:not(:first-child)]:mt-6 rounded-lg p-4">
+          <p className="  leading-7 [&:not(:first-child)]:mt-6 rounded-lg p-4 text-justify">
             Les Cycles Chedaleux est une entreprise familiale fondée en 2006 sur
             la commune de Saint-Avé. Depuis sa création, l'entreprise connaît
             une extension de son activité avec l'ouverture d'un second magasin à
@@ -67,7 +67,7 @@ export default function Entreprise() {
               alt=""
               className="rounded-lg w-full h-56 object-cover my-3"
             />
-            <p className="leading-7 [&:not(:first-child)]:mt-6">
+            <p className="leading-7 [&:not(:first-child)]:mt-6 text-justify">
               l'entreprise propose aussi bien des vélos de route, des VTT, que
               des vélos à assistance électrique (VAE). Cycles Chedaleux regroupe
               une vaste sélection de marques de qualité pour satisfaire au mieux
@@ -96,7 +96,7 @@ export default function Entreprise() {
               alt=""
               className="rounded-lg w-full h-56 object-cover my-3"
             />
-            <p className="leading-7 [&:not(:first-child)]:mt-6">
+            <p className="leading-7 [&:not(:first-child)]:mt-6 text-justify">
               un service qui lui vaut une solide réputation. Aujourd'hui, Cycles
               Chedaleux est bien implantée dans le secteur, notamment grâce à la
               fidélité de ses clients et à son expertise reconnue dans le
@@ -127,7 +127,7 @@ export default function Entreprise() {
                 alt=""
                 className="w-full h-full col-span-1 object-cover rounded-lg"
               />
-              <p className="leading-7 [&:not(:first-child)]:mt-6 col-span-2">
+              <p className="leading-7 [&:not(:first-child)]:mt-6 col-span-2 text-justify">
                 Lors de mon stage, j’ai géré une offre commerciale en
                 partenariat avec le Cyclo Club de Malestroit et la Société
                 Cycliste de Malestroit, clubs sponsorisés par le magasin.
@@ -164,7 +164,7 @@ export default function Entreprise() {
                 alt=""
                 className="w-full h-full col-span-1 object-cover rounded-lg"
               />
-              <p className="leading-7 [&:not(:first-child)]:mt-6 col-span-2">
+              <p className="leading-7 [&:not(:first-child)]:mt-6 col-span-2 text-justify">
                 Lors de la deuxième semaine de mon stage, j’ai organisé l’essai
                 d’un vélo à assistance électrique pour un client. J’ai préparé
                 le vélo en vérifiant les serrages, la pression des pneus et le
@@ -183,7 +183,7 @@ export default function Entreprise() {
         Les compétences que nécessite ce métier
       </h3>
 
-      <p className="leading-7 [&:not(:first-child)]:mt-6">
+      <p className="leading-7 [&:not(:first-child)]:mt-6 text-justify">
         Le métier de vendeur de cycles nécessite des compétences techniques,
         commerciales et relationnelles. D'un point de vue technique, il est
         essentiel d'avoir une bonne connaissance des différents types de vélos,
