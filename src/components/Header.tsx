@@ -26,7 +26,7 @@ export default function Header() {
         <div className="flex-[1] flex gap-2 items-center">
           <Avatar>
             <AvatarImage src="profile-pic.jpeg" alt="photo-profil" />
-            <AvatarFallback>CN</AvatarFallback>
+            <AvatarFallback>AL</AvatarFallback>
           </Avatar>
           <div className="hidden md:block text-lg font-semibold">
             Aloïs Le Breton

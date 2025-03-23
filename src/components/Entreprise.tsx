@@ -1,6 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
 import Section from "./Section";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "./ui/accordion";
+import { Badge } from "./ui/badge";
 import { Card } from "./ui/card";
 
 const cardVariants = {
@@ -19,9 +26,7 @@ export default function Entreprise() {
       <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-primary">
         Mon stage chez Chedaleux !
       </h2>
-      <h3 className="scroll-m-20 pb-2 text-xl font-semibold tracking-tight first:mt-0 ">
-        l'entreprise
-      </h3>
+      <Badge className="my-4 text-md rounded-full">L'entreprise</Badge>
       <div className="grid md:grid-cols-3 gap-5">
         <img
           src="/chedaleux.jpg"
@@ -105,10 +110,8 @@ export default function Entreprise() {
           </Card>
         </motion.div>
       </div>
-      <h3 className="scroll-m-20 pb-2 text-xl font-semibold tracking-tight first:mt-0 ">
-        Expériences
-      </h3>
-      <div className="grid gap-5 h-max-96">
+      <Badge className="my-4 text-md rounded-full">Expériences</Badge>
+      <div className="w-full">
         <motion.div
           className="flex-[1]"
           initial="hidden"
@@ -117,7 +120,128 @@ export default function Entreprise() {
           variants={cardVariants}
           transition={{ duration: 0.5 }}
         >
-          <Card className="p-4 hover:shadow-lg border-1px hover:shadow-purple-500/10">
+          <Card className="flex w-full  hover:shadow-lg hover:shadow-red-500/10 ">
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger>
+                  <section className="flex gap-3 items-center">
+                    <div className="flex bg-white h-32 w-32 items-center rounded object-cover">
+                      <img
+                        src="gp5000.jpeg"
+                        className="rounded h-32 w-32 object-cover"
+                        alt="gp5000"
+                      />
+                    </div>
+                    <div className="flex flex-col gap-2 items-start">
+                      <h3 className=" text-lg font-semibold text-left tracking-tighter">
+                        Expérience en gestion commerciale
+                      </h3>
+                      <p className="text-md text-muted-foreground text-left">
+                        Partenariat club
+                      </p>
+                    </div>
+                  </section>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className="leading-7 [&:not(:first-child)]:mt-6 col-span-2 text-justify">
+                    Lors de mon stage, j’ai géré une offre commerciale en
+                    partenariat avec le Cyclo Club de Malestroit et la Société
+                    Cycliste de Malestroit, clubs sponsorisés par le magasin.
+                    L’offre proposait des pneumatiques GP 5000 à tarifs
+                    préférentiels pour leurs adhérents. Ma mission consistait à
+                    récupérer les commandes, préparer les produits, bons de
+                    commande et factures, puis organiser leur retrait en
+                    magasin. J’ai également assuré la communication de
+                    l’opération sur les réseaux sociaux du magasin et de la
+                    Société Cycliste de Malestroit, que je gère depuis plusieurs
+                    années. Cette expérience m’a permis de renforcer mes
+                    compétences en logistique, gestion de commandes et
+                    communication digitale, tout en consolidant le lien entre le
+                    magasin et ses partenaires associatifs.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger>
+                  <section className="flex gap-3 items-center">
+                    <div className="flex bg-white h-32 w-32 items-center rounded">
+                      <img
+                        src="velo_electrique.webp"
+                        className="h-32 w-32 object-cover rounded"
+                        alt="veloelectrique"
+                      />
+                    </div>
+
+                    <div className="flex flex-col gap-2 items-start">
+                      <h3 className="font-semibold  text-left tracking-tighter text-lg">
+                        Expérience en vente
+                      </h3>
+                      <p className="text-md text-muted-foreground text-left">
+                        Essai d’un vélo électrique
+                      </p>
+                    </div>
+                  </section>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className="leading-7 [&:not(:first-child)]:mt-6 col-span-2 text-md text-justify">
+                    Lors de la deuxième semaine de mon stage, j’ai organisé
+                    l’essai d’un vélo à assistance électrique pour un client.
+                    J’ai préparé le vélo en vérifiant les serrages, la pression
+                    des pneus et le réglage de la selle, puis j’ai présenté ses
+                    fonctionnalités et son utilisation. Après ajustements, le
+                    client a pu tester le vélo dans des conditions optimales.
+                    Cette mission m’a permis d’approfondir ma connaissance des
+                    produits et d’affiner mon relationnel client, en répondant
+                    précisément aux attentes pour offrir une expérience d’achat
+                    personnalisée et de qualité.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger>
+                  <section className="flex gap-3 items-center">
+                    <div className="flex bg-white h-32 w-32 items-center rounded object-cover">
+                      <img
+                        src="rex.jpg"
+                        className="rounded h-32 w-32 object-cover"
+                        alt="rex"
+                      />
+                    </div>
+                    <div className="flex flex-col gap-2 items-start">
+                      <h3 className=" text-lg font-semibold text-left tracking-tighter">
+                        Mon retour d'expérience
+                      </h3>
+                      <p className="text-md text-muted-foreground text-left">
+                        Les compétences que nécessite ce métier
+                      </p>
+                    </div>
+                  </section>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className="leading-7 [&:not(:first-child)]:mt-6 col-span-2 text-justify">
+                    Le métier de vendeur de cycles nécessite des compétences
+                    techniques, commerciales et relationnelles. D'un point de
+                    vue technique, il est essentiel d'avoir une bonne
+                    connaissance des différents types de vélos, de leurs
+                    composants et de l'entretien de base. Le vendeur doit
+                    également être capable de donner des conseils personnalisés
+                    en fonction des besoins spécifiques du client. Sur le plan
+                    relationnel, il doit faire preuve d'un excellent sens du
+                    service client, être à l'écoute, et savoir instaurer une
+                    relation de confiance. Les compétences commerciales incluent
+                    la capacité à vendre et négocier, à promouvoir des produits
+                    et à gérer des offres commerciales. Une bonne organisation
+                    est également nécessaire pour gérer les stocks, préparer les
+                    commandes et assurer une gestion efficace des transactions
+                    financières. Enfin, le vendeur doit être capable de gérer
+                    les aspects logistiques et administratifs liés à la vente
+                    des produits.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </Card>
+          {/* <Card className="p-4 hover:shadow-lg border-1px hover:shadow-purple-500/10">
             <h3 className="scroll-m-20 text-lg font-semibold tracking-tight">
               Expérience en gestion commerciale - Partenariat Club
             </h3>
@@ -143,10 +267,10 @@ export default function Entreprise() {
                 magasin et ses partenaires associatifs.
               </p>
             </div>
-          </Card>
+          </Card> */}
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           className="flex-[1]"
           initial="hidden"
           whileInView="visible"
@@ -177,9 +301,9 @@ export default function Entreprise() {
               </p>
             </div>
           </Card>
-        </motion.div>
+        </motion.div> */}
       </div>
-      <h3 className="scroll-m-20 pb-2 text-xl font-semibold tracking-tight first:mt-0 ">
+      {/* <h3 className="scroll-m-20 pb-2 text-xl font-semibold tracking-tight first:mt-0 ">
         Les compétences que nécessite ce métier
       </h3>
 
@@ -198,7 +322,7 @@ export default function Entreprise() {
         gestion efficace des transactions financières. Enfin, le vendeur doit
         être capable de gérer les aspects logistiques et administratifs liés à
         la vente des produits.
-      </p>
+      </p> */}
     </Section>
   );
 }
