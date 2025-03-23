@@ -143,7 +143,7 @@ export default function Entreprise() {
                   </section>
                 </AccordionTrigger>
                 <AccordionContent>
-                  <p className="leading-7 [&:not(:first-child)]:mt-6 col-span-2 text-justify">
+                  <p className="leading-7 [&:not(:first-child)]:mt-6 col-span-2 text-justify px-4">
                     Lors de mon stage, j’ai géré une offre commerciale en
                     partenariat avec le Cyclo Club de Malestroit et la Société
                     Cycliste de Malestroit, clubs sponsorisés par le magasin.
@@ -183,7 +183,7 @@ export default function Entreprise() {
                   </section>
                 </AccordionTrigger>
                 <AccordionContent>
-                  <p className="leading-7 [&:not(:first-child)]:mt-6 col-span-2 text-md text-justify">
+                  <p className="leading-7 [&:not(:first-child)]:mt-6 col-span-2 text-md text-justify px-4">
                     Lors de la deuxième semaine de mon stage, j’ai organisé
                     l’essai d’un vélo à assistance électrique pour un client.
                     J’ai préparé le vélo en vérifiant les serrages, la pression
@@ -218,7 +218,7 @@ export default function Entreprise() {
                   </section>
                 </AccordionTrigger>
                 <AccordionContent>
-                  <p className="leading-7 [&:not(:first-child)]:mt-6 col-span-2 text-justify">
+                  <p className="leading-7 [&:not(:first-child)]:mt-6 col-span-2 text-justify px-4">
                     Le métier de vendeur de cycles nécessite des compétences
                     techniques, commerciales et relationnelles. D'un point de
                     vue technique, il est essentiel d'avoir une bonne
