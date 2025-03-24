@@ -13,9 +13,8 @@ import {
 import Link from "next/link";
 import NavigationMenu from "./NavigationMenu";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import GitHubIcon from "./ui/icon/GitHubIcon";
-import LinkedInIcon from "./ui/icon/LinkedInIcon";
-import NotionIcon from "./ui/icon/NotionIcon";
+import FacebookIcon from "./ui/icon/FacebookIcon";
+import InstagramIcon from "./ui/icon/InstagramIcon";
 
 export default function Header() {
   const { setTheme } = useTheme();
@@ -34,33 +33,25 @@ export default function Header() {
         </div>
         <NavigationMenu />
         <ul className=" hidden lg:flex items-start gap-2">
-          <Link href="https://github.com/tanguyjulien56">
+          <Link href="https://www.instagram.com/lebretonalois/">
             <Button
               variant="outline"
               className=" hover:shadow-md hover:shadow-purple-500/10"
             >
-              <GitHubIcon size={16} className="text-foreground color-primary" />
-            </Button>
-          </Link>
-          <Link href="https://www.linkedin.com/in/julientanguy56/">
-            <Button
-              variant="outline"
-              className=" hover:shadow-md hover:shadow-purple-500/10"
-            >
-              <LinkedInIcon
+              <InstagramIcon
                 size={16}
                 className="text-foreground color-primary"
               />
             </Button>
           </Link>
-          <Link href="https://www.notion.so/D-veloppeur-Web-React-Next-js-NestJS-Docker-1a68dfa1b0544ddab03469846cb2f959">
+          <Link href="https://www.facebook.com/alois.lebreton.9">
             <Button
               variant="outline"
               className=" hover:shadow-md hover:shadow-purple-500/10"
             >
-              <NotionIcon
+              <FacebookIcon
                 size={16}
-                className="text-foreground color-primary text-white"
+                className="text-foreground color-primary"
               />
             </Button>
           </Link>

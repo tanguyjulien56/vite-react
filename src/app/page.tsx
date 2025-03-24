@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import Entreprise from "@/components/Entreprise";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -42,6 +43,8 @@ export default function Home() {
         </Badge>
         <Skills />
 
+        <Spacing size="md" />
+        <Contact />
         <Spacing size="md" />
         <Footer />
       </main>
