@@ -45,7 +45,7 @@ export default function Home() {
 
         <Spacing size="md" />
         <Contact />
-        <Spacing size="md" />
+
         <Footer />
       </main>
     </div>
