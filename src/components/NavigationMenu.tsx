@@ -37,7 +37,7 @@ export default function NavigationMenu() {
         </MenubarMenu>
         <MenubarMenu>
           <MenubarTrigger onClick={() => scrollToSection("section4")}>
-            Contact
+            Skills
           </MenubarTrigger>
         </MenubarMenu>
       </Menubar>
@@ -56,10 +56,10 @@ export default function NavigationMenu() {
               Parcours
             </DropdownMenuItem>
             <DropdownMenuItem onClick={() => scrollToSection("section3")}>
-             Stage
+              Stage
             </DropdownMenuItem>
             <DropdownMenuItem onClick={() => scrollToSection("section4")}>
-             Contact
+              Skills
             </DropdownMenuItem>
           </DropdownMenuGroup>
         </DropdownMenuContent>
