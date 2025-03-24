@@ -32,7 +32,7 @@ export default function NavigationMenu() {
         </MenubarMenu>
         <MenubarMenu>
           <MenubarTrigger onClick={() => scrollToSection("section3")}>
-            Mon stage
+            Stage
           </MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
