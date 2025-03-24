@@ -24,7 +24,7 @@ export default function Entreprise() {
   return (
     <Section className="flex flex-col gap-5 items-start">
       <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-primary">
-        Mon stage chez Chedaleux !
+        Parlons de mon expérience chez Chedaleux !
       </h2>
       <Badge className="my-4 text-md rounded-full">L'entreprise</Badge>
       <div className="grid md:grid-cols-3 gap-5">

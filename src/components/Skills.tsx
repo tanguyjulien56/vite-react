@@ -25,7 +25,7 @@ export default function Skills() {
   return (
     <div className="flex flex-col gap-5 items-start p-4">
       <h2 className="text-3xl font-semibold tracking-tight text-primary">
-        Mes skills !
+        Jetez un oeil à mes skills !
       </h2>
       <motion.div
         className="grid md:grid-cols-2 gap-5 h-max-96"
